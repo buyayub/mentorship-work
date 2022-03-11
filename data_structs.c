@@ -125,15 +125,19 @@ struct listElement
 	int key;
 };
 
-struct linkedList
+// O(1)
+struct listElement* createElement(int value)
 {
-	int max;
-	struct listElement *head;
-};
+	struct listElement *element = (struct listElement*)malloc(sizeof(struct listElement));
+	element->key = value;
+	element->next = NULL;
+	return element;
+}
 
-struct listElement *listSearch(struct linkedList *list, int value)
+// O(n)
+struct listElement *listSearch(struct listElement *head, int value)
 {
-	x = list->head;
+	x = head;
 	while (x != NULL && x->key != value)
 	{
 		x = x->next;
@@ -141,13 +145,14 @@ struct listElement *listSearch(struct linkedList *list, int value)
 	return x;
 }
 
-void listInsert(struct linkedList *list, struct listElement *element)
+// O(n), since it's bound to worst case scenario
+void listInsert(struct listElement *head, struct listElement *element)
 {	
-	if (list->head->next == NULL)
-		list->head->next = element;
+	if (head->next == NULL)
+		head->next = element;
 	else
 	{
-		curr = linkedList->head;
+		curr = head;
 		while (curr->next != NULL)
 		{
 			curr = curr->next;
@@ -155,6 +160,26 @@ void listInsert(struct linkedList *list, struct listElement *element)
 		curr->next = element;
 	}
 }
+
+// O(n), since it's bound to worst case scenario
+void listDelete(struct listElement *head, struct listElement* element)
+{
+	if (head == element)
+		free(head);
+	else 
+	{
+		//find the element before the element to be deleted
+		prev = head
+		while (curr->next != element)
+			prev = prev->next;
+
+		//splice and delete
+		after = element->next;
+		prev->next = after;
+		free(element);
+	}
+}
+
 
 int main()
 {	
