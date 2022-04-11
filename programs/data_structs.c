@@ -145,6 +145,7 @@ struct listElement *listSearch(struct listElement *head, int value)
 	return x;
 }
 
+
 // O(n), since it's bound to worst case scenario
 void listInsert(struct listElement *head, struct listElement *element)
 {	
@@ -180,6 +181,49 @@ void listDelete(struct listElement *head, struct listElement* element)
 	}
 }
 
+//BINARY SEARCH TREE
+struct BSTNode 
+{
+	int key;			
+	struct BSTNode *left;
+	struct BSTNode *right;
+	struct BSTNODE *parent;	
+};
+
+struct listElement* createBSTNode(int key)
+{
+	struct BSTNode *node = (struct BSTNode)malloc(sizeof(struct BSTNode));
+	node->key = value;
+	node->left = NULL;
+	node->right = NULL;
+	node->parent = NULL;
+	return node;
+}
+
+void inorderTreeWalk(BSTNode *node)
+{
+	if (root != NULL)
+	{
+		inorderTreeWalk(node->left);
+		printf("Tree-Walk: %d\n", node->key);
+		inorderTreeWalk(node->right);
+	}
+}
+
+void  treeSearch(BSTNode *node, int key)
+{
+	if (node == NULL || key == node->key)
+		return node;
+	if (k < node->key)
+		return treeSearch(node->left, key);
+	else
+		return treeSearch(node->right, key);
+}
+
+void treeInsert(BSTNode *root, BSTNode *node)
+{
+	
+}
 
 int main()
 {	
@@ -212,3 +256,5 @@ int main()
 
 	return 0;
 }
+
+

@@ -1,0 +1,57 @@
+Agile software development is a development cycle that utilizes practices as inspired by the agile manifesto. It stresses iterative development, which creates a lot of flexibility and adaptation in what the product becomes. It also puts more emphasis on code than documentation and it's more collaborative. There are various implementations of Agile:
+
++ Scrum: Work is broken into goals that can be completed within a short period of time; these are called sprints. The scrum team has a daily scrum meeting at the beginning of the scrum day to assess scrum progress. At the end of the sprint, they review their work to stakeholders for feedback, and just generally review how the sprint went. The scrum team is made up of the product owner (stakeholder), the developers, and the scrum master who remvoes distractions from the team. Product owner takes care of organizing the backlog. Developers, they do the actual work. Scrum master, removes impediments.
+	+ Cons: 
+		+ Doesn't work well if work is remote/dispersed, or people work part-time.
+		+ Teams need to be generally experienced in other areas, and can't be extremely specialized.
+		+ External dependencies make it hard to do work in sprints.
+		+ Doesn't work well with products that require a lot of backwards and safety testing.
++ Kanban: Work is visualized as a collection of goals that get shifted along a kanban board to show an element of progress. The idea is to pull in work as fast as capacity allows, rather than just being shoved work. It's similar to Trello.
+	+ Cons:
+		+ Can't be used independently.
+		+ Can't build iterations
+		+ No timeframes associated with each phase
++ Extreme Programming (XP): Good software engineering practices taken to the extreme. Pair programming, where someone looks over you while you code. All code is unit tested. Programming features aren't used until they are needed. Management structure is flat. You try to get feedback everywhere from the system, customer, and team. There are a lot of smaller practices associated with extreme programming, but they fall under: Fine-scale feedback, continuous process, shared understanding, and programmer welfare (so much for extreme).
+	+ Cons:
+		+ scalability is hard
+		+ design is done incrementally, there isn't a total plan
+		+ who really wants to do pair programming?
+
++ Lean Software Development: Has 7 principles; Eliminate waste (waste includes partially done work, extra features, relearning, task switching, waiting, handoffs, defects, management activities), amplify learning (create a learning process), decide as late as possible, deliver as fast as possible, empower the team, build integrity in the product, optimize the whole. 
+	+ Couldn't find any cons.
+
++ Scrumban: Scrum + Kanban
+
++ Dynamic systems development method: Focuses on helping people work effectively than to achieve business goals. Has eight principles: 
+	1. Focus on business need
+	2. Deliver on time
+	3. Collaborate
+	4. Never compromise quality
+	5. Build incrementally from firm foundations
+	6. Develop iteratively
+	7. Communicate continuously and clearly
+	8. Demonstrate control
+	+ Core techniques:
+		+ Timeboxing: completing the project incrementally by breaking it down into portions, each with fixed budget and delivery date
+		+ MSCW: technique for prioritising work items or requirements
+			+ Must have
+			+ Should have
+			+ Could have		
+			+ Won't have
+		+ Prototyping
+		+ Testing
+		+ Workshop: bring project to stakeholders to discuss requirements and functionalities
+		+ Modeling
+		+ Configuration management
+
+	+ Roles: There are a lot (read wiki page)
+	+ Cons:
+		+ sometimes there are large management overheads
+		+ can be impractical for small companies since implementation can be costly
+		+ doesn't encourage developer creativity
+		+ project follows specific standard
+	
+
+The different phases of agile development matters on the type, with some not caring about it. Generally it's breaking a big project into small tasks, and deciding as you go on doing those tasks on an incremental level if you need to switch up, or deprecate based on feedback from developers, customers, and stakeholders. 
+
+

@@ -1,0 +1,32 @@
+The waterfall methodology is a sequential development process that consists generally of 5 stages:
+
+1. Requirements: Project requirements are gathered and understood, usually in written in a requirements document. Includes things like project scope, market research, etc.
+2. Design: Design the technical solutions to the problems set out by the project requirements. Design documents are used, maybe whiteboards.
+	2.1. Logical design: where the general conceptual structure of the project is designed.
+	2.2. Physical design: where the concepts take the form of concrete specifications
+3. Implementation: Where the actual act of building the product is done. If things change, it can go back to design.
+4. Testing: Testing is done to ensure product has no errors. Test cases are received from design documents, personas, and user case scenarios. 
+5. Deployment and maintenance: The product is out there, but now you got to maintain it and patch any leftover bugs.  I'd guess documentation 
+
+Pros:
+
++ can catch design errors before commiting them to code
++ total cost can be estimated
++ can measure progress
++ new developers can be brought up to speed
++ customers don't add new requirements
+
+Cons:
+
++ projects take longer to deliver, since it's sequential
++ clients feedback left for after the product is delivered
++ clients not involved in design and implementation
++ deadline creep - when one phase in the proess is delayed,the rest are delayed
+
+
+When to use:
+
++ project no ambiguous requirements
++ is clear in how it'll develop
++ clients aren't really important for the project scope
+

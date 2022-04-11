@@ -29,13 +29,13 @@ A tree is a connected, undirected graph with no cycles. A cycle is a path that s
 
 ## Testing
 
-(**Source** [Getting Started With Testing in Python - realpython.com](https://realpython.com/python-testing/))
+### **Source:** [Getting Started With Testing in Python - realpython.com](https://realpython.com/python-testing/)
 
 **Exploratory Testing:** A form of manual testing where you check certain things out yourself.
 
 Manual testing can be exhaustive as you try to go through every item on a list of exploratory inputs to see if it works. Automated testing fixes this.
 
-### Unit Tests
+#### Unit Tests
 
 **Test step:** engaging in the action you want to test (independant variable)
 **Test assertion:** the thing you check to see if it's working (dependant variable)
@@ -51,7 +51,7 @@ You can write both integration and unit tests in python.
 
 You use `assert` to assert stuff like `assert func() == variable`, it'll throw an `AssertionError` if it comes out wrong.
 
-### Choosing a test runner
+#### Choosing a test runner
 
 **Test runner:** special application designed for running tests, checking output, and giving debugging/diagnostic tools
 
@@ -67,4 +67,61 @@ three popular types of frameworks:
 	+ ability to rerun from the last failing test
 	+ ecosystem for hundreds of plugins to extend functionality
 
-+ variable: 
+...
+
+### **Source:** [pytest: How to mock in Python](https://changhsinlee.com/pytest-mock/)
+
+We sometimes want to mock services and libraries to make testing easier, and without any side effects. For example, using a computationally expensive method or making calls to APIs that do things like post on a social media website.
+
+Shortens the feedback loop.
+
+In python, for pytest, you use a library called `mock`. You mock where the object is imported into, not where the object is imported from.
+
+### Monkey Patching
+
+When you change code at runtime within local use, so any libraries are only affected by it within the program itself.
+
+You do this by changing function addresses (library.func = func1)
+
+## Python
+
+### **Source:** [Mastering Dictionaries and Sets in Python](https://towardsdatascience.com/mastering-dictionaries-and-sets-in-python-6e30b0e2011f)
+
+#### Sets
+
++ unordered and unindexed collection of UNIQUE elements, with no duplicaiton of elements
++ mutable (can add and remove after definition)
+
++ you can use a set function to create a set, or use curly braces:
+	+ `s = set([1, 2, 3])`
+	+ `s = {1, 2, 3}`
++ to add to set: `s.add(x)`
++ to remove: `s.remove(x)`
+
++ the cool stuff you can do with sets is set operations:
+	+  union joins two sets into one, but keeping the elments unique; uses the | operator, or the union function
+		+ `su = s1 | s2`
+		+ `su = s1.union(s2)`
+	+ intersection of a set finds the elements present in both sets and makes a new set out of them; uses the & operator, or the intersection function
+		+ `si = s1 & s2`
+		+ `si = s1.intersection(s2)`
+	+ set differences finds elements only in set \#1 but not set \#2 
+		+ `sd = s1 - s2`
+		+ `sd = s1.difference(s2)`
+	+ symmetric difference finds elements unique to both set1 and set2, and not common in both:
+		+ `ssd = s1 ^ s2`
+		+ `ssd = s1.symmetric_difference(s2)`
++ frozen sets are sets that can't be changed after they're set, and can only be created using the frozenset() function
+
+#### Dictionaries
+
++ unordered collection of a pair of values: a key and its value
+	+ created by using `x = {'key' : value}`
++ I already know how to add and remove
++ you should use dictionary comprehensions to create dictionaries concisely
+
+### Mapping
+
++ Applying functions to all members of a list or similar struct
++ do it using `map(function, list)`
+
