@@ -23,6 +23,8 @@ int problem2(int n)
 	return sum;
 }
 
+// 3. 
+
 int main()
 {
 	printf("Problem 1: \n");
